@@ -93,7 +93,7 @@ class SalaryOptimizer():
     score_pretty = " + ".join(re.findall("[0-9\.]+\*1.0", score))
     #print("{} = {}".format(score_pretty, eval(score)))
 
-    positions = list(map(self.__get_positions(),names))
+    positions = list(map(self.__get_positions,names))
     player_names = list(map(self.__get_names,names))
     sal = list(map(self.__get_data_from_pretty,constraint_pretty.split('+')))
     points = list(map(self.__get_data_from_pretty,score_pretty.split("+")))
