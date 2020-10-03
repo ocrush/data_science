@@ -29,7 +29,7 @@ There is an additional `.py` file that use the pulp to find the best possible li
 
 ## Results<a name="results"></a>
 
-The main findings of the code can be found at the post available [here]().
+The main findings of the code can be found at the post available [here](https://medium.com/@jsingh63/how-do-you-win-daily-fantasy-basketball-contests-da3e21a58b6b).
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
