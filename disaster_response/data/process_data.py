@@ -86,8 +86,8 @@ def save_data(df, database_filename):
     :param df: A dataframe that contains cleaned data for disaster messages and their categories
     :param database_filename: file name to be use by sqllite to save the data
     '''
-    engine = create_engine('sqlite:///InsertDatabaseName.db')
-    df.to_sql('InsertTableName', engine, index=False)
+    engine = create_engine('sqlite:///' + database_filename)
+    df.to_sql(database_filename, engine, index=False)
 def main():
     if len(sys.argv) == 4:
 
