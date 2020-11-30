@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="2af4325b-1ec0-4baa-a701-6e5d543a630b" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/app/run.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/templates/go.html" afterDir="false" />
@@ -11,11 +12,15 @@
       <change beforePath="$PROJECT_DIR$/models/custom_transformer.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/models/train_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/train_classifier.py" afterDir="false" />
     </list>
+=======
+    <list default="true" id="2af4325b-1ec0-4baa-a701-6e5d543a630b" name="Default Changelist" comment="" />
+>>>>>>> 93f98de9c9624012e0ba203c4ea72a4ff3a823d0
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< HEAD
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -23,6 +28,8 @@
       </list>
     </option>
   </component>
+=======
+>>>>>>> 93f98de9c9624012e0ba203c4ea72a4ff3a823d0
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -34,6 +41,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -121,6 +129,10 @@
         <item itemvalue="Python.process_data" />
       </list>
     </recent_temporary>
+=======
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> 93f98de9c9624012e0ba203c4ea72a4ff3a823d0
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -136,6 +148,7 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="453" y="162" width="1071" height="696" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606704314061">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
@@ -224,5 +237,11 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+=======
+    <state x="620" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1605372651090">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state x="620" y="344" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1605372651090" />
+>>>>>>> 93f98de9c9624012e0ba203c4ea72a4ff3a823d0
   </component>
 </project>

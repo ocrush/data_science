@@ -87,7 +87,11 @@ def save_data(df, database_filename):
     :param database_filename: file name to be use by sqllite to save the data
     '''
     engine = create_engine('sqlite:///' + database_filename)
+<<<<<<< HEAD
     df.to_sql(database_filename.split(".")[0], engine, index=False)
+=======
+    df.to_sql(database_filename, engine, index=False)
+>>>>>>> 93f98de9c9624012e0ba203c4ea72a4ff3a823d0
 def main():
     if len(sys.argv) == 4:
 
