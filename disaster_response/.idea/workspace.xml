@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2af4325b-1ec0-4baa-a701-6e5d543a630b" name="Default Changelist" comment="" />
+    <list default="true" id="2af4325b-1ec0-4baa-a701-6e5d543a630b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/run.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/go.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/templates/master.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/disaster_response.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/disaster_response.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/custom_transformer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/train_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/train_classifier.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -18,8 +34,93 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="disaster_response" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="disaster_response" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.train_classifier">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="disaster_response" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="process_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="disaster_response" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/process_data.py" />
+      <option name="PARAMETERS" value="disaster_messages.csv disaster_categories.csv DisasterResponse.db" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="train_classifier" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="disaster_response" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/models" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/models/train_classifier.py" />
+      <option name="PARAMETERS" value="../data/DisasterResponse.db disaster_classifier.pkl" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.process_data" />
+      <item itemvalue="Python.train_classifier" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.train_classifier" />
+        <item itemvalue="Python.process_data" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -35,9 +136,93 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="620" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1605372651090">
+    <state x="453" y="162" width="1071" height="696" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606704314061">
       <screen x="0" y="23" width="1920" height="977" />
     </state>
+    <state x="453" y="162" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1606704314061" />
+    <state x="2373" y="173" width="1071" height="696" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.23.1920.1057/0.23.1920.977@1920.23.1920.1057" timestamp="1605406028846" />
+    <state x="2614" y="321" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605405595003">
+      <screen x="1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2614" y="321" key="#com.intellij.fileTypes.FileTypeChooser/1920.23.1920.1057/0.23.1920.977@1920.23.1920.1057" timestamp="1605405595003" />
+    <state x="2697" y="273" key="FileChooserDialogImpl" timestamp="1605403068464">
+      <screen x="1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2697" y="273" key="FileChooserDialogImpl/1920.23.1920.1057/0.23.1920.977@1920.23.1920.1057" timestamp="1605403068464" />
+    <state width="1635" height="430" key="GridCell.Tab.0.bottom" timestamp="1606706185341">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1635" height="430" key="GridCell.Tab.0.bottom/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1606706185341" />
+    <state width="1635" height="430" key="GridCell.Tab.0.bottom/1920.23.1920.1057/0.23.1920.977@1920.23.1920.1057" timestamp="1606524167836" />
+    <state width="1635" height="430" key="GridCell.Tab.0.center" timestamp="1606706185341">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1635" height="430" key="GridCell.Tab.0.center/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1606706185341" />
+    <state width="1635" height="430" key="GridCell.Tab.0.center/1920.23.1920.1057/0.23.1920.977@1920.23.1920.1057" timestamp="1606524167835" />
+    <state width="1635" height="430" key="GridCell.Tab.0.left" timestamp="1606706185341">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1635" height="430" key="GridCell.Tab.0.left/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1606706185341" />
+    <state width="1635" height="430" key="GridCell.Tab.0.left/1920.23.1920.1057/0.23.1920.977@1920.23.1920.1057" timestamp="1606524167834" />
+    <state width="1635" height="430" key="GridCell.Tab.0.right" timestamp="1606706185341">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1635" height="430" key="GridCell.Tab.0.right/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1606706185341" />
+    <state width="1635" height="430" key="GridCell.Tab.0.right/1920.23.1920.1057/0.23.1920.977@1920.23.1920.1057" timestamp="1606524167835" />
+    <state width="1635" height="325" key="GridCell.Tab.1.bottom" timestamp="1606590985086">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1635" height="325" key="GridCell.Tab.1.bottom/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1606590985086" />
+    <state width="1635" height="325" key="GridCell.Tab.1.bottom/1920.23.1920.1057/0.23.1920.977@1920.23.1920.1057" timestamp="1606523231848" />
+    <state width="1635" height="325" key="GridCell.Tab.1.center" timestamp="1606590985086">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1635" height="325" key="GridCell.Tab.1.center/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1606590985086" />
+    <state width="1635" height="325" key="GridCell.Tab.1.center/1920.23.1920.1057/0.23.1920.977@1920.23.1920.1057" timestamp="1606523231847" />
+    <state width="1635" height="325" key="GridCell.Tab.1.left" timestamp="1606590985086">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1635" height="325" key="GridCell.Tab.1.left/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1606590985086" />
+    <state width="1635" height="325" key="GridCell.Tab.1.left/1920.23.1920.1057/0.23.1920.977@1920.23.1920.1057" timestamp="1606523231847" />
+    <state width="1635" height="325" key="GridCell.Tab.1.right" timestamp="1606590985086">
+      <screen x="0" y="23" width="1920" height="977" />
+    </state>
+    <state width="1635" height="325" key="GridCell.Tab.1.right/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1606590985086" />
+    <state width="1635" height="325" key="GridCell.Tab.1.right/1920.23.1920.1057/0.23.1920.977@1920.23.1920.1057" timestamp="1606523231848" />
+    <state x="2418" y="150" key="SettingsEditor" timestamp="1605405489504">
+      <screen x="1920" y="23" width="1920" height="1057" />
+    </state>
+    <state x="2418" y="150" key="SettingsEditor/1920.23.1920.1057/0.23.1920.977@1920.23.1920.1057" timestamp="1605405489504" />
+    <state x="2540" y="370" key="com.intellij.ide.util.TipDialog" timestamp="1606338591765">
+      <screen x="1920" y="23" width="1920" height="1057" />
+    </state>
     <state x="620" y="344" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.23.1920.977@0.23.1920.977" timestamp="1605372651090" />
+    <state x="2540" y="370" key="com.intellij.ide.util.TipDialog/1920.23.1920.1057/0.23.1920.977@1920.23.1920.1057" timestamp="1606338591765" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/train_classifier.py</url>
+          <line>222</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/train_classifier.py</url>
+          <line>196</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/train_classifier.py</url>
+          <line>221</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/models/train_classifier.py</url>
+          <line>216</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
