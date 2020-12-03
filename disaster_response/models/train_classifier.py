@@ -12,8 +12,6 @@ from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.corpus import stopwords
 import re
 from sklearn.pipeline import Pipeline
-from imblearn.over_sampling import SMOTE
-from imblearn.pipeline import Pipeline
 from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -84,7 +82,7 @@ def build_tuned_model():
              ('start_verb', StartingVerbExtractor())
              ])),
 
-         ('clf', MultiOutputClassifier(LogisticRegression(solver='sag', C=0.0464, class_weight='balanced'), n_jobs=-1))
+         ('clf', MultiOutputClassifier(LogisticRegression(C=0.0464, class_weight='balanced'), n_jobs=-1))
          ])
 
     return pipeline
@@ -133,7 +131,7 @@ def multilabel_recall_score(y_test, y_pred):
     score = []
     for i in range(0, len(y_test)):
         # multi label score
-        score.append(recall_score(y_test[i, :], y_pred[i, :]))
+        score.append(recall_score(y_test[i, :], y_pred[i, :],zero_division=1))
     # return average of accuracy_score.  This is overall average score
     return (sum(score) / len(score))
 def display_results(y_test,y_pred,categories,debug=False):
@@ -204,8 +202,6 @@ def main():
         print('Loading data...\n    DATABASE: {}'.format(database_filepath))
         X, Y, category_names = load_data(database_filepath)
         X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2,random_state=42)
-        #sm = SMOTE()
-        #X_train_res, y_train_res = sm.fit_sample(X_train,Y_train)
         print('Building model...')
         model = build_tuned_model()
         # tuning model takes too long.  Initially, try tuning it and afterwards just use the tuned parameters
