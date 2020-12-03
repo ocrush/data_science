@@ -12,64 +12,20 @@ from nltk.stem.wordnet import WordNetLemmatizer
 from nltk.corpus import stopwords
 import re
 from sklearn.pipeline import Pipeline
+from imblearn.over_sampling import SMOTE
+from imblearn.pipeline import Pipeline
 from sklearn.metrics import confusion_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
 from sklearn.multioutput import MultiOutputClassifier
 from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import make_scorer, accuracy_score, classification_report
+from sklearn.metrics import make_scorer, accuracy_score, classification_report,recall_score
 from sklearn.base import BaseEstimator, TransformerMixin
 
-class StartingVerbExtractor(BaseEstimator, TransformerMixin):
-
-    def starting_verb(self, text):
-        #print("text:{}".format(text))
-        pos_tags = nltk.pos_tag(tokenize(text))
-        if len(pos_tags) == 0:
-            return False
-        first_word, first_tag = pos_tags[0]
-        if first_tag in ['VB', 'VBP'] or first_word == 'RT':
-            return True
-        return False
-
-    def fit(self, x, y=None):
-        return self
-
-    def transform(self, X):
-        X_tagged = pd.Series(X).apply(self.starting_verb)
-        return pd.DataFrame(X_tagged)
-
-class TextLengthExtractor(BaseEstimator, TransformerMixin):
-    def fit(self, x, y=None):
-        return self
-
-    def transform(self, X):
-        X_tagged = pd.Series(X).apply(len)
-        return pd.DataFrame(X_tagged)
-
-def tokenize(text):
-    '''
-    :param text: document to be tokenized
-    :return: array of tokens where the original document is reduced by removing punctuation, stop words, lemmatized
-    '''
-    # convert to lowercase
-    text = text.lower()
-    # remove punctuation
-    text = re.sub(r"[^a-zA-Z0-9]", " ", text)
-    # tokenize text
-    tokens = word_tokenize(text)
-    tokens = [w for w in tokens if w not in stopwords.words("english")]
-    # initiate lemmatizer
-    lemmatizer = WordNetLemmatizer()
-
-    # iterate through each token
-    clean_tokens = []
-    for tok in tokens:
-        # lemmatize, normalize case, and remove leading/trailing white space
-        clean_tok = lemmatizer.lemmatize(tok.strip())
-        clean_tokens.append(clean_tok)
-    return clean_tokens
+from custom_transformer import tokenize
+from custom_transformer import StartingVerbExtractor
 def load_data(database_filepath):
     '''
 
@@ -85,6 +41,8 @@ def load_data(database_filepath):
     engine = create_engine('sqlite:///' + database_filepath)
     # create a data frame from table
     df = pd.read_sql_table('DisasterResponse', con=engine)
+    # child_alone is all 0's.  No messages classify child alone so don't include it in ML
+    df.drop(columns=['child_alone'], inplace=True)
     # raw messages
     X = df.message
     # categories of given message
@@ -92,7 +50,8 @@ def load_data(database_filepath):
 
     return X, y, df.columns.values[4:]
 
-def build_model():
+def build_svm_model():
+    from sklearn.svm import SVC
     '''
     Build a model to learn categories of disaster messages.  Use pipelines.
     Use tokenize method to get an array of words which is used by CountVectorizer for bag of words
@@ -102,15 +61,15 @@ def build_model():
     pipeline = Pipeline([
         ('vect', CountVectorizer(tokenizer=tokenize)),
         ('tfidf', TfidfTransformer()),
-        ('clf', MultiOutputClassifier(RandomForestClassifier()))
+        ('clf', MultiOutputClassifier(SVC(class_weight='balanced')))
     ])
     return pipeline
-
 def build_tuned_model():
     '''
        Build a model to learn categories of disaster messages.  Use pipelines.
        Use tokenize method to get an array of words which is used by CountVectorizer for bag of words
        ML algorithms require numerical values so use TFIDF and feed it into multi-label classifier
+       The classifier for this method is a result of tuning the model using GridSearchCV.
        :return: Model to be used for learning
        '''
     from sklearn.pipeline import FeatureUnion
@@ -118,14 +77,14 @@ def build_tuned_model():
         ('features', FeatureUnion([
 
             ('nlp_pipeline', Pipeline([
-                ('vect', CountVectorizer(tokenizer=tokenize)),
+                ('vect', CountVectorizer(tokenizer=tokenize,ngram_range=(1, 2))),
                 ('tfidf', TfidfTransformer())
                  ])),
 
              ('start_verb', StartingVerbExtractor())
              ])),
 
-         ('clf', MultiOutputClassifier(RandomForestClassifier(n_estimators=300),n_jobs=-1))
+         ('clf', MultiOutputClassifier(LogisticRegression(solver='sag', C=0.0464, class_weight='balanced'), n_jobs=-1))
          ])
 
     return pipeline
@@ -151,6 +110,30 @@ def multilabel_auccuracy_score(y_test, y_pred):
     for i in range(0, len(y_test)):
         # multi label score
         score.append(accuracy_score(y_test[i, :], y_pred[i, :]))
+    # return average of accuracy_score.  This is overall average score
+    return (sum(score) / len(score))
+def multilabel_recall_score(y_test, y_pred):
+    '''
+    computes average accuracy score of predicted categories for each disaster message
+    Here, we have a multi labels for each message and accuracy score is simply how many
+    categories for a message was correctly predicted.  Each
+    :param y_test: a 2d array with categories of test disaster messages
+    :param y_pred: a 2d array with categories of predicted disaster messages
+    :param debug:
+    :return:
+    '''
+
+    if len(y_test) != len(y_pred):
+        print("Error: Length of y_test and y_pred must be same")
+        return -1.0
+    if isinstance(y_test, np.ndarray) != isinstance(y_pred, np.ndarray):
+        print("Error: Type of y_test and y_pred must be numpy array")
+        return -1.0
+
+    score = []
+    for i in range(0, len(y_test)):
+        # multi label score
+        score.append(recall_score(y_test[i, :], y_pred[i, :]))
     # return average of accuracy_score.  This is overall average score
     return (sum(score) / len(score))
 def display_results(y_test,y_pred,categories,debug=False):
@@ -181,46 +164,62 @@ def evaluate_model(model, X_test, Y_test, category_names,debug=False):
     Y_pred = model.predict(X_test)
     display_results(Y_test, Y_pred, category_names, debug)
     auc_score = multilabel_auccuracy_score(Y_test, Y_pred)
+    rec_score = multilabel_recall_score(Y_test, Y_pred)
     if debug is True:
-        print(auc_score)
+        print("average accuracy score:{}".format(auc_score))
+        print("average recall score:{}".format(rec_score))
+
     return auc_score
 
 def tune_model(model, X_train, y_train):
     from sklearn.model_selection import GridSearchCV
-    parameters = {'clf__estimator__n_estimators': [10, 150, 300],
-                  'clf__estimator__max_depth': [30, 60, 90, None],
-                  'vect__ngram_range': [(1, 1), (2, 2)]
-                  }
 
-    cv = GridSearchCV(model, param_grid=parameters, scoring=make_scorer(multilabel_auccuracy_score),
+    param_grid = [
+        {'clf': [MultiOutputClassifier(LogisticRegression(), n_jobs=-1)],
+         'clf__estimator__solver': ['lbfgs', 'sag'],
+         'clf__estimator__C': np.logspace(-4, 4, 4),
+         'clf__estimator__class_weight': [None, 'balanced'],
+         'vect__ngram_range': [(1, 1), (1, 2)]},
+        {'clf': [MultiOutputClassifier(RandomForestClassifier())],
+         'clf__estimator__n_estimators': list(range(100, 301, 100)),
+         'vect__ngram_range': [(1, 1), (1, 2)]}
+    ]
+
+    cv = GridSearchCV(model, param_grid=param_grid, scoring=make_scorer(multilabel_recall_score),
                       cv=5, verbose=2,n_jobs=-1)
     gs_fit = cv.fit(X_train, y_train)
     df_cv = pd.DataFrame(gs_fit.cv_results_).sort_values('mean_test_score', ascending=False)
     df_cv.to_csv("gridsearch_results.csv")
-    print(gs_fit.best_params_)
+    print("best parameters={}".format(gs_fit.best_params_))
+    return gs_fit
 def save_model(model, model_filepath):
     import pickle
     pickle.dump(model, open(model_filepath, 'wb'))
 
 
 def main():
-    if len(sys.argv) == 3:
-        database_filepath, model_filepath = sys.argv[1:]
+    if len(sys.argv) >= 3:
+        database_filepath =  sys.argv[1]
+        model_filepath = sys.argv[2]
         print('Loading data...\n    DATABASE: {}'.format(database_filepath))
         X, Y, category_names = load_data(database_filepath)
-        X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2)
-        
+        X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.2,random_state=42)
+        #sm = SMOTE()
+        #X_train_res, y_train_res = sm.fit_sample(X_train,Y_train)
         print('Building model...')
         model = build_tuned_model()
-        
-        print('Training model...')
-        model.fit(X_train, Y_train)
+        # tuning model takes too long.  Initially, try tuning it and afterwards just use the tuned parameters
+        if len(sys.argv) == 4 and sys.argv[3] == '--tune_model':
+            print('Tuning Model...')
+            model = tune_model(model, X_train, Y_train)
+        else:
+            print('Training model...')
+            model.fit(X_train, Y_train)
 
         print('Evaluating model...')
         evaluate_model(model, X_test, Y_test, category_names,debug=True)
 
-        print('Tuning Model...')
-        #tune_model(model, X_train, Y_train)
+
 
         print('Saving model...\n    MODEL: {}'.format(model_filepath))
         save_model(model, model_filepath)

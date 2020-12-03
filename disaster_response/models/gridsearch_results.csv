@@ -1,25 +1,231 @@
-,mean_fit_time,std_fit_time,mean_score_time,std_score_time,param_clf__estimator__max_depth,param_clf__estimator__n_estimators,param_vect__ngram_range,params,split0_test_score,split1_test_score,split2_test_score,split3_test_score,split4_test_score,mean_test_score,std_test_score,rank_test_score
-22,1937.0321344375611,54.74151210327018,127.71267619132996,5.8466547809093825,,300,"(1, 1)","{'clf__estimator__max_depth': None, 'clf__estimator__n_estimators': 300, 'vect__ngram_range': (1, 1)}",0.9483313468414477,0.94961594490793,0.9480276055740695,0.948199809251279,0.9478752715519236,0.9484100493779762,0.0006224135414248081,1
-20,934.2870666027069,22.765952340559178,76.55276098251343,2.198772115979355,,150,"(1, 1)","{'clf__estimator__max_depth': None, 'clf__estimator__n_estimators': 150, 'vect__ngram_range': (1, 1)}",0.9481062110978365,0.9492649980134782,0.9479679966088799,0.9483720129284909,0.9478554018968606,0.9483133596117268,0.00050617609973719,2
-18,168.02321252822875,1.0015003367790996,33.596388530731204,0.32293996585056667,,10,"(1, 1)","{'clf__estimator__max_depth': None, 'clf__estimator__n_estimators': 10, 'vect__ngram_range': (1, 1)}",0.9437293073764773,0.9450139054429562,0.9433516134159595,0.943742383298861,0.944153022836828,0.9439980820988526,0.0005677247130511119,3
-14,425.92611951828,7.058671470417097,48.333618021011354,0.5380641552806281,90,150,"(1, 1)","{'clf__estimator__max_depth': 90, 'clf__estimator__n_estimators': 150, 'vect__ngram_range': (1, 1)}",0.9419017348695242,0.9431466030988951,0.9419607375615641,0.9421726805489018,0.9423978699729465,0.9423159450695856,0.0004505730246674991,4
-16,730.034320306778,2.128140706669666,65.81820244789124,0.3485070370509775,90,300,"(1, 1)","{'clf__estimator__max_depth': 90, 'clf__estimator__n_estimators': 300, 'vect__ngram_range': (1, 1)}",0.9416964640444676,0.9431333598198596,0.941755417792582,0.9423647538811751,0.9417686642292912,0.9421437578146213,0.0005513370165344854,5
-12,143.81118564605714,1.450024962039815,32.25049638748169,0.6367252786647981,90,10,"(1, 1)","{'clf__estimator__max_depth': 90, 'clf__estimator__n_estimators': 10, 'vect__ngram_range': (1, 1)}",0.9415441663355542,0.9419348430671093,0.9420600858368772,0.9411129656122162,0.9412984157261375,0.9415901095640421,0.0003618142405906879,6
-23,4730.430072832108,478.71766633720836,289.49214482307434,30.43961696155587,,300,"(2, 2)","{'clf__estimator__max_depth': None, 'clf__estimator__n_estimators': 300, 'vect__ngram_range': (2, 2)}",0.9407959210700272,0.9406105151635253,0.9396293647008673,0.9409076458432385,0.9409738780267816,0.9405834763811776,0.000492663661249618,7
-21,3873.0239691257475,90.29520206251408,226.92599186897277,13.790992467025251,,150,"(2, 2)","{'clf__estimator__max_depth': None, 'clf__estimator__n_estimators': 150, 'vect__ngram_range': (2, 2)}",0.9408025427095451,0.9405906502449725,0.939457161023656,0.9408281672229876,0.9407619350394458,0.9404881111322745,0.0005220638655576574,8
-6,140.13755297660828,2.7659336403367445,31.819029235839842,0.5727749856243741,60,10,"(1, 1)","{'clf__estimator__max_depth': 60, 'clf__estimator__n_estimators': 10, 'vect__ngram_range': (1, 1)}",0.9384518606806735,0.9394053767712567,0.9384438086154516,0.9386425051660796,0.9396889736660531,0.9389265051814809,0.0005195373427732002,9
-19,325.3015094280243,7.064938346062826,44.082392358779906,1.6342467300825518,,10,"(2, 2)","{'clf__estimator__max_depth': None, 'clf__estimator__n_estimators': 10, 'vect__ngram_range': (2, 2)}",0.9386703747847683,0.9393126738180064,0.9377417474699018,0.9392650876913811,0.9387021141312701,0.9387384237183677,0.0005668116493946344,10
-10,538.6183302879333,2.9353441062669345,55.724617385864256,1.1191801195257203,60,300,"(1, 1)","{'clf__estimator__max_depth': 60, 'clf__estimator__n_estimators': 300, 'vect__ngram_range': (1, 1)}",0.93792212951924,0.93897497020259,0.9385299104540568,0.9387286070046852,0.9381855030996353,0.938468222179807,0.0003759285764291096,11
-8,342.46811270713806,5.640725351561679,43.563989114761355,0.400699730139159,60,150,"(1, 1)","{'clf__estimator__max_depth': 60, 'clf__estimator__n_estimators': 150, 'vect__ngram_range': (1, 1)}",0.937981724274901,0.938763077738016,0.9384438086154513,0.9387617230964566,0.9383510835584924,0.9384602750757318,0.0002911361224262742,12
-0,144.16644234657286,0.3624899051675205,33.25835180282593,0.43671210598749666,30,10,"(1, 1)","{'clf__estimator__max_depth': 30, 'clf__estimator__n_estimators': 10, 'vect__ngram_range': (1, 1)}",0.9328896834856015,0.9338564428552198,0.9331319874953341,0.9333041911725464,0.9327875801409127,0.9331939941085172,0.0003775347848093444,13
-4,326.86033449172976,7.351534766543363,47.90967354774475,1.1136953407097034,30,300,"(1, 1)","{'clf__estimator__max_depth': 30, 'clf__estimator__n_estimators': 300, 'vect__ngram_range': (1, 1)}",0.9318765726393579,0.9329625215202989,0.9325557674985148,0.9328736819795189,0.9326948550839543,0.9325926632334893,0.0003848223384355027,14
-2,234.6251852989197,5.064879705807931,39.602278280258176,2.1146684880941056,30,150,"(1, 1)","{'clf__estimator__max_depth': 30, 'clf__estimator__n_estimators': 150, 'vect__ngram_range': (1, 1)}",0.9319295457555002,0.9330486028340321,0.9325027817516812,0.9327743337042054,0.9326882318656001,0.9325886896814516,0.00037358555037986116,15
-13,146.40091791152955,0.8927649710917903,31.597101640701293,0.6842823352717112,90,10,"(2, 2)","{'clf__estimator__max_depth': 90, 'clf__estimator__n_estimators': 10, 'vect__ngram_range': (2, 2)}",0.9304396768639658,0.9315918421400856,0.9308999629099504,0.931019180840328,0.9303436125681921,0.9308588700277352,0.000448536178210122,16
-15,514.0665539264679,4.159978798884607,45.33336911201477,0.764598221833192,90,150,"(2, 2)","{'clf__estimator__max_depth': 90, 'clf__estimator__n_estimators': 150, 'vect__ngram_range': (2, 2)}",0.9293802145410938,0.9303933253873383,0.9300654373973141,0.9300124516504804,0.9295819424574524,0.9298866742958601,0.0003616336527965884,17
-17,927.7982148170471,12.29183756008961,64.69122171401978,3.0667882966041544,90,300,"(2, 2)","{'clf__estimator__max_depth': 90, 'clf__estimator__n_estimators': 300, 'vect__ngram_range': (2, 2)}",0.9291948086345911,0.9301085948880664,0.9298932337201029,0.9299992052137719,0.9295686960207442,0.9297528980439262,0.00033236350468733784,18
-7,137.71766772270203,0.48341460252119917,33.79277081489563,2.6345410652573835,60,10,"(2, 2)","{'clf__estimator__max_depth': 60, 'clf__estimator__n_estimators': 10, 'vect__ngram_range': (2, 2)}",0.9287180505892998,0.9297510263540975,0.9293103905049285,0.9289924760239242,0.9288401420017758,0.9291224277872883,0.0003716522893636381,19
-11,624.3842332839965,3.741381707988424,56.976644086837766,1.8789440081207733,60,300,"(2, 2)","{'clf__estimator__max_depth': 60, 'clf__estimator__n_estimators': 300, 'vect__ngram_range': (2, 2)}",0.9277115613825724,0.9288239968215865,0.928416256027104,0.9283102845334361,0.9281976898214127,0.9282919554114226,0.00035907776822642076,20
-9,395.49672718048095,1.0325805492351163,44.215775632858275,2.267163728341257,60,150,"(2, 2)","{'clf__estimator__max_depth': 60, 'clf__estimator__n_estimators': 150, 'vect__ngram_range': (2, 2)}",0.9275526420341421,0.9288107535425507,0.928336777406853,0.9282904148783733,0.9281380808562241,0.9282257295441287,0.00040487268267931593,21
-1,147.2842188835144,0.6252785717030207,33.639305877685544,0.2875846404914973,30,10,"(2, 2)","{'clf__estimator__max_depth': 30, 'clf__estimator__n_estimators': 10, 'vect__ngram_range': (2, 2)}",0.9270825056283682,0.928559131240869,0.9275552376410501,0.9275618608594053,0.9272240767233364,0.9275965838048364,0.0005162571992224444,22
-5,374.31599521636963,2.470576791169382,48.984722805023196,1.9223471352908774,30,300,"(2, 2)","{'clf__estimator__max_depth': 30, 'clf__estimator__n_estimators': 300, 'vect__ngram_range': (2, 2)}",0.9261687193748932,0.9275393987551072,0.9268730461505615,0.9268929158056255,0.9265286387961387,0.926800548879964,0.00045452328616188577,23
-3,270.446928358078,0.8013356055640991,38.05592555999756,0.5170606032584828,30,150,"(2, 2)","{'clf__estimator__max_depth': 30, 'clf__estimator__n_estimators': 150, 'vect__ngram_range': (2, 2)}",0.9260826380611602,0.9277049397430556,0.9268465532771443,0.9267869443119571,0.9264690298309503,0.926778032085084,0.0005372467111593221,24
+,mean_fit_time,std_fit_time,mean_score_time,std_score_time,param_clf,param_clf__estimator__C,param_clf__estimator__class_weight,param_clf__estimator__solver,param_vect__ngram_range,param_clf__estimator__n_estimators,params,split0_test_score,split1_test_score,split2_test_score,split3_test_score,split4_test_score,mean_test_score,std_test_score,rank_test_score
+15,171.25230073928833,8.225345492013748,49.39596514701843,5.263530974468403,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",0.046415888336127774,balanced,sag,"(1, 2)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 0.046415888336127774, 'clf__estimator__class_weight': 'balanced', 'clf__estimator__solver': 'sag', 'vect__ngram_range': (1, 2)}",0.5660841303564371,0.5616822648247921,0.5710594437917564,0.5769726193903588,0.5723423328489385,0.5696281582424566,0.005273590570624888,1
+13,176.02465114593505,1.2988404885022036,42.225840425491334,1.1155148177782443,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",0.046415888336127774,balanced,lbfgs,"(1, 2)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 0.046415888336127774, 'clf__estimator__class_weight': 'balanced', 'clf__estimator__solver': 'lbfgs', 'vect__ngram_range': (1, 2)}",0.5655295181033743,0.5616147241017091,0.5710594437917564,0.5770756577444701,0.5721629382489433,0.5694884563980507,0.0053824777106561816,2
+21,318.4289342880249,13.978962005759099,68.54707136154175,10.357001092198052,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",21.54434690031882,balanced,lbfgs,"(1, 2)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 21.54434690031882, 'clf__estimator__class_weight': 'balanced', 'clf__estimator__solver': 'lbfgs', 'vect__ngram_range': (1, 2)}",0.5640352128323489,0.5583942409044339,0.5691354781081588,0.5727034795052123,0.5716185855965373,0.5671773993893383,0.005312494291254217,3
+23,225.64842982292174,18.774462756560805,53.12360882759094,11.105561018407336,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",21.54434690031882,balanced,sag,"(1, 2)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 21.54434690031882, 'clf__estimator__class_weight': 'balanced', 'clf__estimator__solver': 'sag', 'vect__ngram_range': (1, 2)}",0.5642791901502237,0.5579608966149951,0.5690977257635395,0.5725734837922409,0.5716224649101448,0.5671067522462288,0.005401528910224976,4
+5,307.64916677474974,8.718761067783229,44.9708384513855,1.9771113823620907,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",0.0001,balanced,lbfgs,"(1, 2)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 0.0001, 'clf__estimator__class_weight': 'balanced', 'clf__estimator__solver': 'lbfgs', 'vect__ngram_range': (1, 2)}",0.5602352781756422,0.5547137287918935,0.5669856612242606,0.5695530733989035,0.5683403676255854,0.563965621843257,0.005639000661852962,5
+7,531.5374571800232,104.57686112387353,65.4062349319458,34.49605358580235,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",0.0001,balanced,sag,"(1, 2)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 0.0001, 'clf__estimator__class_weight': 'balanced', 'clf__estimator__solver': 'sag', 'vect__ngram_range': (1, 2)}",0.6116136358236829,0.5604784937580879,0.610079657604039,0.46907797119023276,0.5568662666675579,0.56162320500872,0.051837496274290504,6
+31,246.27778205871581,13.338560207934503,46.35989813804626,14.250665867717164,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",10000.0,balanced,sag,"(1, 2)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 10000.0, 'clf__estimator__class_weight': 'balanced', 'clf__estimator__solver': 'sag', 'vect__ngram_range': (1, 2)}",0.5584731960864352,0.5486132110158202,0.5599997698954844,0.5657733382466175,0.5605116970060583,0.558674242450083,0.0055999142233380825,7
+29,354.58790545463563,29.886246739965003,68.08800892829895,8.050352370143662,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",10000.0,balanced,lbfgs,"(1, 2)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 10000.0, 'clf__estimator__class_weight': 'balanced', 'clf__estimator__solver': 'lbfgs', 'vect__ngram_range': (1, 2)}",0.5522557116213501,0.5441526474104414,0.5587096244507638,0.5580459380446737,0.5569379761129523,0.5540203795280363,0.005425729427717751,8
+4,200.9481399536133,62.52333202592491,164.52233839035034,58.423297917506574,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",0.0001,balanced,lbfgs,"(1, 1)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 0.0001, 'clf__estimator__class_weight': 'balanced', 'clf__estimator__solver': 'lbfgs', 'vect__ngram_range': (1, 1)}",0.5430385218132125,0.5361146670581465,0.5478587384436231,0.551309660181578,0.5476517704706072,0.5451946715934335,0.005246391840936106,9
+25,333.8558861732483,17.282554212176574,69.73047132492066,14.013152513938724,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",10000.0,,lbfgs,"(1, 2)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 10000.0, 'clf__estimator__class_weight': None, 'clf__estimator__solver': 'lbfgs', 'vect__ngram_range': (1, 2)}",0.5414669378763622,0.5304345731172779,0.5418934698464195,0.5445651673792704,0.5453539250986219,0.5407428146635904,0.005366207697830784,10
+19,209.63399052619934,11.466286568666348,47.48678464889527,6.686073352068737,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",21.54434690031882,,sag,"(1, 2)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 21.54434690031882, 'clf__estimator__class_weight': None, 'clf__estimator__solver': 'sag', 'vect__ngram_range': (1, 2)}",0.5400441060956479,0.5322389703269184,0.5412565260102316,0.5441487237971703,0.5453750183579554,0.5406126689175846,0.004605220950816762,11
+17,284.9120878219604,7.389736868162785,59.489009380340576,11.20863357483086,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",21.54434690031882,,lbfgs,"(1, 2)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 21.54434690031882, 'clf__estimator__class_weight': None, 'clf__estimator__solver': 'lbfgs', 'vect__ngram_range': (1, 2)}",0.540671355948166,0.5320974650304668,0.5418250819972426,0.5438586268332534,0.544263358465895,0.5405431776550047,0.004423159926410765,12
+6,216.77138223648072,45.62880064693381,65.39310479164124,14.071598815584776,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",0.0001,balanced,sag,"(1, 1)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 0.0001, 'clf__estimator__class_weight': 'balanced', 'clf__estimator__solver': 'sag', 'vect__ngram_range': (1, 1)}",0.5432981497393926,0.5344947297194654,0.5457610479171957,0.5805486215904451,0.49820697680192305,0.5404619051536843,0.026321687577868267,13
+27,251.1612636089325,9.026620965305998,52.66553521156311,15.312190274058837,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",10000.0,,sag,"(1, 2)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 10000.0, 'clf__estimator__class_weight': None, 'clf__estimator__solver': 'sag', 'vect__ngram_range': (1, 2)}",0.5383316974050072,0.525668678393099,0.5398120444696076,0.5464142636889406,0.5424888531706034,0.5385431074254516,0.006998997481604116,14
+14,156.20991015434265,1.160867194504388,42.71710968017578,1.1021460356610817,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",0.046415888336127774,balanced,sag,"(1, 1)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 0.046415888336127774, 'clf__estimator__class_weight': 'balanced', 'clf__estimator__solver': 'sag', 'vect__ngram_range': (1, 1)}",0.535989287554378,0.5325240254788273,0.5402446552558166,0.5446381790108116,0.5376906436013982,0.5382173581802464,0.004074129054934617,15
+12,159.81662673950194,3.771405585480588,44.59863386154175,2.432552921136785,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",0.046415888336127774,balanced,lbfgs,"(1, 1)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 0.046415888336127774, 'clf__estimator__class_weight': 'balanced', 'clf__estimator__solver': 'lbfgs', 'vect__ngram_range': (1, 1)}",0.5359336657824274,0.5325209984436191,0.5400020253647393,0.5445372050364469,0.5378694704969631,0.5381726730248392,0.0040224447413673425,16
+22,209.47402939796447,9.661780469757232,67.3700722694397,2.2172263978670177,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",21.54434690031882,balanced,sag,"(1, 1)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 21.54434690031882, 'clf__estimator__class_weight': 'balanced', 'clf__estimator__solver': 'sag', 'vect__ngram_range': (1, 1)}",0.523891379878761,0.5126920440255543,0.523874375809544,0.5277199176971963,0.5219968490123331,0.5220349132846778,0.005028717940938658,17
+20,203.90858721733093,2.626504668577998,43.22064261436462,1.5003775571697417,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",21.54434690031882,balanced,lbfgs,"(1, 1)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 21.54434690031882, 'clf__estimator__class_weight': 'balanced', 'clf__estimator__solver': 'lbfgs', 'vect__ngram_range': (1, 1)}",0.52144620974524,0.5113099054500151,0.5239888953155984,0.5254886479103847,0.5211522954753829,0.5206771907793243,0.004953395920829622,18
+16,183.99787979125978,3.121595234497092,45.305819797515866,2.6490916579380688,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",21.54434690031882,,lbfgs,"(1, 1)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 21.54434690031882, 'clf__estimator__class_weight': None, 'clf__estimator__solver': 'lbfgs', 'vect__ngram_range': (1, 1)}",0.4962177090994367,0.4814029724733243,0.4984642002414881,0.4954189122517821,0.4960586369521395,0.4935124862036341,0.0061415856181345815,19
+18,192.35579724311827,8.000635124545513,60.14641237258911,8.095154906725755,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",21.54434690031882,,sag,"(1, 1)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 21.54434690031882, 'clf__estimator__class_weight': None, 'clf__estimator__solver': 'sag', 'vect__ngram_range': (1, 1)}",0.49597208112405544,0.48089215168240834,0.49938710701203454,0.4950930499087525,0.4955319104597479,0.4933752600373998,0.006423639483833416,20
+30,212.79455466270446,4.365954941471618,67.52096910476685,6.555860460669456,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",10000.0,balanced,sag,"(1, 1)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 10000.0, 'clf__estimator__class_weight': 'balanced', 'clf__estimator__solver': 'sag', 'vect__ngram_range': (1, 1)}",0.4894969426417642,0.47775342045102337,0.49075494612038,0.49035643017907515,0.48514583730543476,0.48670151533953554,0.004900850000990256,21
+36,1812.0900638103485,10.577873010992795,85.10130224227905,1.6938858663554912,MultiOutputClassifier(estimator=RandomForestClassifier()),,,,"(1, 1)",300,"{'clf': MultiOutputClassifier(estimator=RandomForestClassifier()), 'clf__estimator__n_estimators': 300, 'vect__ngram_range': (1, 1)}",0.47870221493338966,0.46375290049965395,0.4814683815031495,0.48366868882626585,0.47686479927654213,0.47689139700780026,0.006968218293894427,22
+28,214.22120780944823,3.426924596753274,51.857954454422,2.687625269870305,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",10000.0,balanced,lbfgs,"(1, 1)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 10000.0, 'clf__estimator__class_weight': 'balanced', 'clf__estimator__solver': 'lbfgs', 'vect__ngram_range': (1, 1)}",0.4807975389360871,0.46190915898697626,0.48236614947724366,0.48191694650922073,0.47617308815028225,0.476632576411962,0.007682909479879185,23
+26,204.01947617530823,8.080396538622239,89.4994393825531,9.756199461364186,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",10000.0,,sag,"(1, 1)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 10000.0, 'clf__estimator__class_weight': None, 'clf__estimator__solver': 'sag', 'vect__ngram_range': (1, 1)}",0.47776281640791984,0.4670907750356961,0.4790373050446957,0.48027333682366,0.4744235539100053,0.47571755744439537,0.004734020574187799,24
+34,1335.1491365909576,16.077651023996463,67.43757209777831,0.8690818163846502,MultiOutputClassifier(estimator=RandomForestClassifier()),,,,"(1, 1)",200,"{'clf': MultiOutputClassifier(estimator=RandomForestClassifier()), 'clf__estimator__n_estimators': 200, 'vect__ngram_range': (1, 1)}",0.47676910920514937,0.4630439923592795,0.4796692886576366,0.48119379681379904,0.4758178894492315,0.4752988152970191,0.00642594322829221,25
+32,811.9451523780823,9.985220001192465,56.9120475769043,0.6613744613802927,MultiOutputClassifier(estimator=RandomForestClassifier()),,,,"(1, 1)",100,"{'clf': MultiOutputClassifier(estimator=RandomForestClassifier()), 'clf__estimator__n_estimators': 100, 'vect__ngram_range': (1, 1)}",0.4758152471487843,0.4620737931769234,0.4792514099086688,0.47854890223399815,0.47486482983200884,0.4741108364600767,0.006236759671419579,26
+24,211.39063568115233,1.880768553277522,46.3998761177063,1.076912996609285,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",10000.0,,lbfgs,"(1, 1)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 10000.0, 'clf__estimator__class_weight': None, 'clf__estimator__solver': 'lbfgs', 'vect__ngram_range': (1, 1)}",0.47268473024626156,0.4570057440776023,0.4760958333391521,0.47181379488667113,0.4717617615218179,0.469872372814301,0.006626158157314132,27
+35,3836.194823217392,156.71434374117675,73.63918137550354,7.360297366727045,MultiOutputClassifier(estimator=RandomForestClassifier()),,,,"(1, 2)",200,"{'clf': MultiOutputClassifier(estimator=RandomForestClassifier()), 'clf__estimator__n_estimators': 200, 'vect__ngram_range': (1, 2)}",0.45403034108287105,0.43792700982902333,0.45457627004411244,0.45966297397859246,0.4525821879162784,0.4517557565701756,0.007315331069839216,28
+37,3889.579784679413,524.0326958171854,65.39350252151489,10.199121141858557,MultiOutputClassifier(estimator=RandomForestClassifier()),,,,"(1, 2)",300,"{'clf': MultiOutputClassifier(estimator=RandomForestClassifier()), 'clf__estimator__n_estimators': 300, 'vect__ngram_range': (1, 2)}",0.4528551866121273,0.43764374125016475,0.4566647364384169,0.45812325899109446,0.44957273224124983,0.45097193110661066,0.007303349596871154,29
+33,2191.7245334148406,31.26792895036593,60.4557186126709,0.7620807713692727,MultiOutputClassifier(estimator=RandomForestClassifier()),,,,"(1, 2)",100,"{'clf': MultiOutputClassifier(estimator=RandomForestClassifier()), 'clf__estimator__n_estimators': 100, 'vect__ngram_range': (1, 2)}",0.44849614676441013,0.43418784143550443,0.4527113127007781,0.4565612950185444,0.445096267678948,0.447410572719637,0.007657789033132355,30
+8,316.5598699569702,89.14433076241446,112.8400104522705,55.406060865487724,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",0.046415888336127774,,lbfgs,"(1, 1)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 0.046415888336127774, 'clf__estimator__class_weight': None, 'clf__estimator__solver': 'lbfgs', 'vect__ngram_range': (1, 1)}",0.3705202217708635,0.3591429022898187,0.37345323929852065,0.37352699483684865,0.38466332728566627,0.37226133709634357,0.008148088062623966,31
+10,172.19364171028138,44.08851511591681,47.444420385360715,2.795867853233788,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",0.046415888336127774,,sag,"(1, 1)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 0.046415888336127774, 'clf__estimator__class_weight': None, 'clf__estimator__solver': 'sag', 'vect__ngram_range': (1, 1)}",0.3705202217708635,0.3591429022898187,0.3734191770326987,0.37352699483684865,0.38466332728566627,0.3722545246431792,0.008147102869025893,32
+9,362.08016715049746,66.04649530446301,42.122792625427245,1.2691102562671568,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",0.046415888336127774,,lbfgs,"(1, 2)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 0.046415888336127774, 'clf__estimator__class_weight': None, 'clf__estimator__solver': 'lbfgs', 'vect__ngram_range': (1, 2)}",0.34916451363593864,0.33539127813593067,0.35166061078975214,0.35196700668277686,0.35788670123328953,0.3492140220955376,0.007481320544704051,33
+11,159.78071789741517,3.1085221920637722,43.44923634529114,2.1475002581396887,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",0.046415888336127774,,sag,"(1, 2)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 0.046415888336127774, 'clf__estimator__class_weight': None, 'clf__estimator__solver': 'sag', 'vect__ngram_range': (1, 2)}",0.34916451363593864,0.33539127813593067,0.35161292361760144,0.35196700668277686,0.35788670123328953,0.34920448466110743,0.007478225229607341,34
+1,158.254958486557,1.0918316659582996,45.62845864295959,1.443883278410732,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",0.0001,,lbfgs,"(1, 2)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 0.0001, 'clf__estimator__class_weight': None, 'clf__estimator__solver': 'lbfgs', 'vect__ngram_range': (1, 2)}",0.3228717539768135,0.31001957913789124,0.32756620547855647,0.32518728594845775,0.331020279624379,0.3233330208332196,0.007182097130630985,35
+3,595.615994977951,1.800232092765782,39.399885988235475,0.8448220980425943,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",0.0001,,sag,"(1, 2)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 0.0001, 'clf__estimator__class_weight': None, 'clf__estimator__solver': 'sag', 'vect__ngram_range': (1, 2)}",0.3228717539768135,0.31001957913789124,0.32756620547855647,0.32518728594845775,0.331020279624379,0.3233330208332196,0.007182097130630985,35
+2,189.83717021942138,14.57886840072118,128.31216778755189,74.65587264881692,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",0.0001,,sag,"(1, 1)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 0.0001, 'clf__estimator__class_weight': None, 'clf__estimator__solver': 'sag', 'vect__ngram_range': (1, 1)}",0.3228717539768135,0.31001957913789124,0.32756620547855647,0.32518728594845775,0.331020279624379,0.3233330208332196,0.007182097130630985,35
+0,137.97927799224854,0.8067477712473929,61.185829162597656,1.1573636165409347,"MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1)",0.0001,,lbfgs,"(1, 1)",,"{'clf': MultiOutputClassifier(estimator=LogisticRegression(C=0.046415888336127774,
+                                                   class_weight='balanced',
+                                                   solver='sag'),
+                      n_jobs=-1), 'clf__estimator__C': 0.0001, 'clf__estimator__class_weight': None, 'clf__estimator__solver': 'lbfgs', 'vect__ngram_range': (1, 1)}",0.3228717539768135,0.31001957913789124,0.32756620547855647,0.32518728594845775,0.331020279624379,0.3233330208332196,0.007182097130630985,35

@@ -54,6 +54,8 @@ def categories_to_num(categories):
 
         # convert column from string to numeric
         categories[column] = categories[column].astype(int)
+        # There may be some leftover of 2's from figure-8 data.  2's mean No so a value of 0
+        categories[column].replace(2, 0, inplace=True)
     return categories
 def clean_data(df):
     '''
