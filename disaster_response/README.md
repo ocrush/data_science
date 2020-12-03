@@ -21,7 +21,7 @@ For this project, I was interested in analyzing and classifying real messages fr
 
 ## File Descriptions <a name="files"></a>
 
-There is 2 Python files and Flask web app available here to showcase work related to the above questions.  
+There is 2 main Python files and Flask web app available here to showcase work related to the above questions.  
 
 #### ETL Pipeline - process_data.py - run this file to create the database table needed for classifier
 * Loads the messages and categories dataset
@@ -41,6 +41,10 @@ There is 2 Python files and Flask web app available here to showcase work relate
 * Allows emergency worker to enter a disaster message and classify result in several categories
 * Provides visualizations of the data using Plotly
 
+#### Helper files
+custom_transformer.py - helper file that defines custom features to be used in the ML pipeline and also how to tokenize the text messages
+
+mlsmote.py - multi label smote implementation.  Not used right now.
 
 ## Results<a name="results"></a>
 Users are able to enter a disaster message via a web page and have it automatically classified to one or more categories.  
