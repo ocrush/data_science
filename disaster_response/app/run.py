@@ -154,7 +154,8 @@ def plotly_wordcloud(text,title):
 # load data
 engine = create_engine('sqlite:///../data/DisasterResponse.db')
 df = pd.read_sql_table('DisasterResponse', engine)
-
+# child_alone is all 0's.  No messages classify child alone so don't include it in ML
+df.drop(columns=['child_alone'], inplace=True)
 # load model
 model = joblib.load("../models/classifier.pkl")
 
